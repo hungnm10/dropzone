@@ -1245,7 +1245,7 @@ class Dropzone extends Emitter {
     if (typeof this.options.paramName === "function") {
       return this.options.paramName(n);
     } else {
-      return `${this.options.paramName}${this.options.uploadMultiple ? `[${n}]` : ""}`;
+      return `${this.options.paramName}`;
     }
   }
 
